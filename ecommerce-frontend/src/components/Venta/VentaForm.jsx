@@ -58,7 +58,7 @@ const VentaForm = ({ onVentaCreada }) => {
           required
         />
         <br />
-        <button type="submit">Guardar</button>
+        <button type="submit" onClick={() => navigate('/venta/list')}>Guardar</button>
       </form>
     </div>
   )
