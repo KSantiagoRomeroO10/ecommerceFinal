@@ -1,0 +1,36 @@
+.container {
+  font-family: sans-serif;
+  padding: 2rem;
+  text-align: center;
+}
+
+.title {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.description {
+  font-size: 1.2rem;
+  color: #555;
+}
+
+.nav {
+  margin-top: 2rem;
+}
+
+.link {
+  margin: 0 1rem;
+  text-decoration: none;
+  color: #333;
+  font-weight: normal;
+  transition: color 0.2s ease;
+}
+
+.link:hover {
+  color: #0077cc;
+}
+
+.active {
+  text-decoration: underline;
+  font-weight: bold;
+}
