@@ -1,7 +1,9 @@
 import { useState } from 'react'
 import { crearVendedor } from '../../services/vendedorService'
+import { useNavigate } from 'react-router-dom'
 
 const VendedorForm = ({ onVendedorCreado }) => {
+  const navigate = useNavigate()
   const [form, setForm] = useState({
     nombreVendedor: '',
     correoVendedor: '',

@@ -1,8 +1,10 @@
 import { useState } from 'react'
 import { crearProducto } from '../../services/productoService'
-import { NavLink } from 'react-router-dom'
+import { useNavigate } from 'react-router-dom'
 
 const ProductoForm = ({ onProductoCreado }) => {
+  const navigate = useNavigate()
+
   const [form, setForm] = useState({
     nombreProducto: '',
     precioProducto: '',

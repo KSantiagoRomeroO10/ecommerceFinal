@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react'
 import {
-  getVentasProducto,
+  getVentaProductos,
   eliminarVentaProducto
 } from '../../services/ventaProductoService'
 
@@ -12,7 +12,7 @@ const VentaProductoList = () => {
 
   const cargarVentas = async () => {
     try {
-      const response = await getVentasProducto()
+      const response = await getVentaProductos()
       setVentas(response.data)
     } catch (error) {
       console.error('Error al cargar ventas:', error)
