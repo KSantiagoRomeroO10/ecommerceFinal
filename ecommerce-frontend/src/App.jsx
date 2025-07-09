@@ -9,6 +9,12 @@ import './App.css'
 import VendedorList from './components/Vendedor/VendedorList'
 import VendedorEditar from './components/Vendedor/VendedorEditar'
 import VendedorForm from './components/Vendedor/VendedorForm'
+import VentaList from './components/Venta/VentaList'
+import VentaForm from './components/Venta/VentaForm'
+import VentaEditar from './components/Venta/VentaEditar'
+import VentaProductoForm from './components/VentaProducto/VentaProductoForm'
+import VentaProductoEditar from './components/VentaProducto/VentaProductoEditar'
+import VentaProductoList from './components/VentaProducto/VentaProductoList'
 
 function App() {
   return (
@@ -23,13 +29,13 @@ function App() {
       <Route path="/vendedor/create" element={<VendedorForm />} />
       <Route path="/vendedor/editar/:id" element={<VendedorEditar />} />
 
-      <Route path="/ventas/list" />
-      <Route path="/ventas/create" />
-      <Route path="/ventas/editar/:id" />
+      <Route path="/ventas/list" element={<VentaList/>}/>
+      <Route path="/ventas/create" element={<VentaForm/>}/>
+      <Route path="/ventas/editar/:id"element={<VentaEditar/>} />
 
-      <Route path="/venta-producto/list" />
-      <Route path="/venta-producto/create" />
-      <Route path="/venta-producto/editar/:id" />
+      <Route path="/venta-producto/list" element={<VentaProductoList/>}/>
+      <Route path="/venta-producto/create" element={<VentaProductoForm/>}/>
+      <Route path="/venta-producto/editar/:id"element={<VentaProductoEditar/>} />
     </Routes>
   )
 }
